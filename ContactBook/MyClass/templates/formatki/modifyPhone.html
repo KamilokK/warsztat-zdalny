@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edytuj telefon</title>
+</head>
+<body>
+<header>Edytuj numer telefonu</header>
+    <form method="post">
+        <input type="number" name="number" value="{{phone.number}}">
+        <input type="text" name="type_number" value="{{phone.type_number}}">
+        <button type="submit">Zatwierdź zmiany</button>
+        {% csrf_token %}
+    </form>
+</body>
+</html>

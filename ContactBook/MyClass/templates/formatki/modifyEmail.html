@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edytuj adres email</title>
+</head>
+<body>
+<header>Edytuj adres email</header>
+    <form method="post">
+        <input type="text" name="email" value="{{email.email}}">
+        <input type="text" name="email_type" value="{{email.email_type}}">
+        <button type="submit">Zatwierdź zmiany</button>
+        {% csrf_token %}
+    </form>
+</body>
+</html>

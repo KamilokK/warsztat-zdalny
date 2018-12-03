@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodaj telefon</title>
+</head>
+<body>
+<header>Dodaj telefon</header>
+    <form method="POST"> {% csrf_token %}
+        <label>Telefon
+        <input type="number" id="number" name="number" placeholder="wpisz numer">
+        </label>
+       <label>
+  <select name="type_number">
+    <option value="">Select...</option>
+    <option value="1">Domowy</option>
+    <option value="2">Służbowy</option>
+      <option value="3">Inny</option>
+  </select>
+</label>
+
+          <label>
+        <input type="submit" value="Dodaj">
+        </label>
+
+
+
+    </form>
+
+
+</body>
+</html>

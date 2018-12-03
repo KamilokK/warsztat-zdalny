@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edytuj dane adresowe</title>
+</head>
+<body>
+<header>Zmień dane adresowe</header>
+    <form method="post">
+        <input type="text" name="city" value="{{adress.city}}">
+        <input type="text" name="street" value="{{adress.street}}">
+        <input type="number" name="house_number" value="{{adress.house_number}}">
+        <input type="number" name="apartment_number" value="{{adress.apartment_number}}">
+
+        <button type="submit">Zatwierdź zmiany</button>
+        {% csrf_token %}
+    </form>
+</body>
+</html>

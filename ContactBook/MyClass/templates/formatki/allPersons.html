@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wszystkie osoby</title>
+</head>
+<body>
+<header>Wszystkie kontakty</header>
+<ul>
+    {% for person in persons %}
+
+   <li> <a href="show/{{ person.id }}"> {{ person.name }}</a>
+       <a href="modify/{{ person.id }}">Edytuj</a>
+        <a href="delete/{{ person.id }}">Usuń</a></li>
+
+    {% endfor %}
+</ul>
+
+</body>
+</html>

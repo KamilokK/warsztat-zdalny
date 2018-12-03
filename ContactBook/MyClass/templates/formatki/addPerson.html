@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodaj kontakt</title>
+</head>
+<body>
+<header>Dodaj nowy kontakt</header>
+    <form method="POST">{% csrf_token %}
+        <label>Imię
+        <input type="text" id="imię" name="name" placeholder="wpisz imię">
+        </label>
+        <label>Nazwisko
+        <input type="text" id="nazwisko" name="surname" placeholder="wpisz nazwisko">
+        </label>
+        <label>Opis
+        <input type="text" id="opis" name="description" placeholder="dodaj opis">
+        </label>
+          <label>
+        <input type="submit" value="Dodaj">
+        </label>
+
+
+
+    </form>
+
+
+</body>
+</html>

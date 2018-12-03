@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodaj grupę</title>
+</head>
+<body>
+<header>Dodaj nową grupę</header>
+    <form method="POST">{% csrf_token %}
+        <label>Nazwa
+        <input type="text" id="nazwa" name="name" placeholder="wpisz nazwę">
+        </label>
+          <label>
+        <input type="submit" value="Dodaj">
+        </label>
+
+
+
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dane osoby</title>
+</head>
+<body>
+<header>Dane kontaktu</header>
+    <div>
+    Imię:    {{ person.name }}<br>
+    Nazwisko:    {{ person.surname }}<br>
+    Opis:    {{ person.description }}<br>
+
+
+        <a href="/{{ person.id }}/addAdress">Dodaj adres</a>
+        <a href="/{{ person.id }}/addPhone">Dodaj telefon</a>
+        <a href="/{{ person.id }}/addEmail">Dodaj email</a>
+        <br>
+        <a href="/modify/{{ person.id }}">Edytuj dane</a>
+        <a href="/modifyAdress/{{ person.id }}">Edytuj adres</a>
+        <a href="/modifyPhone/{{ person.id }}">Edytuj telefon</a>
+        <a href="/modifyEmail/{{ person.id }}">Edytuj email</a>
+        <br>
+        <a href="/delete/{{ person.id }}">Usuń osobę</a>
+    </div>
+
+</body>
+</html>
